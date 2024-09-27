@@ -1,0 +1,48 @@
+<!-- Written by: Chris Wickens (8827595) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+    integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Pictures of Woof-Woofs!</title>
+</head>
+
+<!-- get the breeds when the body loads -->
+
+<body onload="getBreeds()">
+  <!-- title section -->
+  <div class="titleBar">
+    <div class="dogFont">
+      <h1>&#128021;</h1>
+    </div>
+    <div class="titleText">Get<br />Dog<br />Pictures</div>
+
+    <!-- Input section -->
+    <div class="inputDiv">
+      <label for="breedList">Choose a dog</label>
+      <select name="breedList" id="breedList"></select>
+    </div>
+    <div class="inputDiv">
+      <label for="quantity">Quantity</label>
+      <input type="number" id="quantity" name="quantity" default="1" min="1" max="100" value="1" />
+    </div>
+    <div class="inputDiv">
+      <button id="getImagesButton" onclick="getImages(quantity.value)">
+        Get Images
+      </button>
+    </div>
+  </div>
+
+  <!-- Output section -->
+  <div id="output"></div>
+
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>
