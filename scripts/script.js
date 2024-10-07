@@ -1,4 +1,4 @@
-// Written by: Chris Wickens (8827595)
+// Written by: Chris Wickens
 
 let breedList = document.querySelector("#breedList");
 let output = document.querySelector("#output");
